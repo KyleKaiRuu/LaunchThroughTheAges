@@ -39,7 +39,7 @@ public class MenuController : MonoBehaviour
         {
             activeMove = false;
         }
-        if (Input.GetButtonDown("Interact") && !loading)
+        if (Input.GetButtonDown("Submit") && !loading)
         {
             StartCoroutine(LoadScene());
         }
