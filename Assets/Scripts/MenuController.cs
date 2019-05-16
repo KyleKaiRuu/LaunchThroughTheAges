@@ -22,7 +22,7 @@ public class MenuController : MonoBehaviour
 
     private void Update()
     {
-        if(activeMove && Input.GetAxis("Vertical") != 0 && !loading)
+        if(!activeMove && Input.GetAxis("Vertical") != 0 && !loading)
         {
             if (Input.GetAxis("Vertical") > 0)
             {
@@ -39,7 +39,7 @@ public class MenuController : MonoBehaviour
         {
             activeMove = false;
         }
-        if (Input.GetButtonDown("Interact") && !loading)
+        if (Input.GetButtonDown("Submit") && !loading)
         {
             StartCoroutine(LoadScene());
         }
@@ -59,9 +59,9 @@ public class MenuController : MonoBehaviour
 
     void DownButton()
     {
-        if (curButton == 0)
+        if (curButton == maxButton)
         {
-            curButton = maxButton;
+            curButton = 0;
         }
         else
         {
@@ -72,6 +72,14 @@ public class MenuController : MonoBehaviour
     IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(buttons[curButton].level);
+        if (buttons[curButton].level == "None")
+        {
+            Debug.Log("Exit");
+            Application.Quit();
+        }
+        else
+        {
+            SceneManager.LoadScene(buttons[curButton].level); 
+        }
     }
 }
