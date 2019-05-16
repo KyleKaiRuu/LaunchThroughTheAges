@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TestControls : MonoBehaviour {
-    [ReadOnlyField]
-    public float speed = 1.0f;
+    
+    private float speed = .5f;
     public float velocity = 25f;
 	
 	void Update ()
