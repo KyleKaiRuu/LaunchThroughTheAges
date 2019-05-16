@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
     public MenuButton[] buttons;
+    public Sprite[] hoveredSprites;
+    [ReadOnlyField]
+    public Sprite[] defaultSprites;
 
     [ReadOnlyField]
     public int curButton = 0;
@@ -18,19 +21,26 @@ public class MenuController : MonoBehaviour
     private void Start()
     {
         maxButton = buttons.Length - 1;
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            defaultSprites[i] = buttons[i].GetComponent<SpriteRenderer>().sprite;
+        }
     }
 
     private void Update()
     {
+        buttons[curButton].GetComponent<SpriteRenderer>().sprite = hoveredSprites[curButton];
         if(!activeMove && Input.GetAxis("Vertical") != 0 && !loading)
         {
             if (Input.GetAxis("Vertical") > 0)
             {
+                buttons[curButton].GetComponent<SpriteRenderer>().sprite = defaultSprites[curButton];
                 UpButton();
                 activeMove = true;
             }
             else
             {
+                buttons[curButton].GetComponent<SpriteRenderer>().sprite = defaultSprites[curButton];
                 DownButton();
                 activeMove = true;
             }
