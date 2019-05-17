@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/MainMenu.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/StoneAge.unity
-=======
 - path: Assets/Scenes/GameScene.unity
->>>>>>> 577481069b0b266f594f9a51be8bcb18373202a2
->>>>>>> ea4530180423ef8401b7a783aa3d6d3803ce9e64
   isLoaded: 1
   isActive: 1
