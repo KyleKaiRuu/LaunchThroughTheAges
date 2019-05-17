@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TestControls : MonoBehaviour {
-    
-    private float speed = .5f;
+
+    public float speed = .5f;
     public float velocity = 25f;
+    public bool started = false;
 	
 	void Update ()
     {
@@ -21,12 +22,10 @@ public class TestControls : MonoBehaviour {
             transform.position += Vector3.right * speed;
 
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!started && Input.GetKeyDown(KeyCode.Space))
         {
             GetComponent<Rigidbody>().velocity = Vector3.up * velocity;
+            started = true;
         }
-
-
-
     }
 }
