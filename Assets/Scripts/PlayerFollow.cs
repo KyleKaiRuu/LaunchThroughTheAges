@@ -17,6 +17,7 @@ public class PlayerFollow : MonoBehaviour {
 	void Update ()
     {
         test.y = Player.transform.position.y + distance.y;
+        test.x = Player.transform.position.x + distance.x;
         transform.position = test;
 	}
 }
