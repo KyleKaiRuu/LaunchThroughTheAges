@@ -7,6 +7,11 @@ public class TestControls : MonoBehaviour {
     public float speed = .5f;
     public float velocity = 25f;
     public bool started = false;
+    public bool launched = false;
+    public Animator launcher;
+    public string launch;
+    [ReadOnlyField]
+    public float timer;
 	
 	void Update ()
     {
@@ -22,10 +27,21 @@ public class TestControls : MonoBehaviour {
             transform.position += Vector3.right * speed;
 
         }
-        if (!started && Input.GetKeyDown(KeyCode.Space))
+        if (started && !launched)
         {
-            GetComponent<Rigidbody>().velocity = Vector3.up * velocity;
+            timer += Time.deltaTime;
+        }
+        if (!started && Input.GetKeyDown(KeyCode.Space))
+        {            
             started = true;
+            launcher.Play(launch);
+        }
+        if (timer >= 1.85)
+        {
+            timer = 0;
+            gameObject.GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<Rigidbody>().velocity = Vector3.up * velocity;
+            launched = true;
         }
     }
 }
