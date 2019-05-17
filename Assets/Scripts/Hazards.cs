@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Hazards : MonoBehaviour {
 
@@ -8,7 +9,7 @@ public class Hazards : MonoBehaviour {
     {
         if (other.gameObject.tag.Equals("Player"))
         {
-            print("You DEAD AS FUCK!");
+            SceneManager.LoadScene("Death");
         }
     }
 }
