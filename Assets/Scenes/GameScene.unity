@@ -2592,8 +2592,6 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
     - target: {fileID: 114333193005054018, guid: 1b5f83531ef2ab74594f3067f872e40e,
         type: 2}
       propertyPath: launcher
@@ -2604,7 +2602,6 @@ Prefab:
       propertyPath: launch
       value: Launch
       objectReference: {fileID: 0}
->>>>>>> b8a8663d0534fed0602e50651babcedcf867b4e1
     - target: {fileID: 54886499214815034, guid: 1b5f83531ef2ab74594f3067f872e40e,
         type: 2}
       propertyPath: m_UseGravity
