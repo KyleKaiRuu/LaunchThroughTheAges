@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/StoneAge.unity
-=======
-- path: Assets/Scenes/GameScene.unity
->>>>>>> 5dbb56684fe905e46f413e6ff27ed75f9683eae9
+- path: Assets/Scenes/Art Test.unity
   isLoaded: 1
   isActive: 1
