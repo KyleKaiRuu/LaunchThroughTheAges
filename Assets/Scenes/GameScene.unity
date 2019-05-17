@@ -2592,6 +2592,19 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 114333193005054018, guid: 1b5f83531ef2ab74594f3067f872e40e,
+        type: 2}
+      propertyPath: launcher
+      value: 
+      objectReference: {fileID: 994207763}
+    - target: {fileID: 114333193005054018, guid: 1b5f83531ef2ab74594f3067f872e40e,
+        type: 2}
+      propertyPath: launch
+      value: Launch
+      objectReference: {fileID: 0}
+>>>>>>> b8a8663d0534fed0602e50651babcedcf867b4e1
     - target: {fileID: 54886499214815034, guid: 1b5f83531ef2ab74594f3067f872e40e,
         type: 2}
       propertyPath: m_UseGravity
@@ -5131,6 +5144,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4342455606645164, guid: 66cafe4b7d9d7404abdbb8737aae41b1,
     type: 2}
   m_PrefabInternal: {fileID: 1224949572}
+--- !u!95 &994207763 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 4e0b71e94741c6a4ea66a90f0ca755ed,
+    type: 3}
+  m_PrefabInternal: {fileID: 1141768024}
 --- !u!1001 &997010133
 Prefab:
   m_ObjectHideFlags: 0
