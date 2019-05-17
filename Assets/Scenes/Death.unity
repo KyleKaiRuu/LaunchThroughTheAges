@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 1024329406}
   - component: {fileID: 1024329405}
   - component: {fileID: 1024329404}
+  - component: {fileID: 1024329407}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -256,6 +257,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1024329407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1024329403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38bb07d126f2584ead5068099136921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1341982974}
+  - {fileID: 1380131231}
+  - {fileID: 2037001882}
+  hoveredSprites:
+  - {fileID: 21300000, guid: a88019b28c2236e48bb4069ea829b7d1, type: 3}
+  - {fileID: 21300000, guid: eac1c977544754c4fa95ee1a59ba4a09, type: 3}
+  - {fileID: 21300000, guid: 97b22aa843a8c7b4fa8924084c4c7356, type: 3}
+  defaultSprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  curButton: 0
+  maxButton: 0
+  delay: 0.5
 --- !u!1 &1341982971
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,6 +292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1341982973}
   - component: {fileID: 1341982972}
+  - component: {fileID: 1341982974}
   m_Layer: 0
   m_Name: Menu Button Selected
   m_TagString: Untagged
@@ -331,6 +359,18 @@ Transform:
   m_Father: {fileID: 1848881511}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1341982974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1341982971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd66f5e6df80c6d4a934597ea97bc06d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: MainMenu
 --- !u!1 &1380131228
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1380131230}
   - component: {fileID: 1380131229}
+  - component: {fileID: 1380131231}
   m_Layer: 0
   m_Name: Restart Button
   m_TagString: Untagged
@@ -406,6 +447,18 @@ Transform:
   m_Father: {fileID: 1848881511}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1380131231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380131228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd66f5e6df80c6d4a934597ea97bc06d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: StoneAge
 --- !u!1 &1380827011
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,6 +660,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2037001881}
   - component: {fileID: 2037001880}
+  - component: {fileID: 2037001882}
   m_Layer: 0
   m_Name: Quit Button
   m_TagString: Untagged
@@ -673,3 +727,15 @@ Transform:
   m_Father: {fileID: 1848881511}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2037001882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037001879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd66f5e6df80c6d4a934597ea97bc06d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: None
