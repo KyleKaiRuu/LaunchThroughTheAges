@@ -2592,6 +2592,11 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 54886499214815034, guid: 1b5f83531ef2ab74594f3067f872e40e,
+        type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b5f83531ef2ab74594f3067f872e40e, type: 2}
   m_IsPrefabAsset: 0
