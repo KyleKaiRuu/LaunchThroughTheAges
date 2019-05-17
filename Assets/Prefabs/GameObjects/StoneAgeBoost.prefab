@@ -52,6 +52,7 @@ GameObject:
   - component: {fileID: 4636770958348448}
   - component: {fileID: 95227777772130506}
   - component: {fileID: 135692674144243020}
+  - component: {fileID: 114739700470967392}
   m_Layer: 0
   m_Name: StoneAgeBoost
   m_TagString: Untagged
@@ -118,6 +119,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114739700470967392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1909151109320050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d5dd3bcd93cbe24c821cba311dcd925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135692674144243020
 SphereCollider:
   m_ObjectHideFlags: 1
